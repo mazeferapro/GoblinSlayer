@@ -10,8 +10,8 @@ public class HotZoneCheck : MonoBehaviour
 
     private void Awake()
     {
-        enemyParent = GetComponent<Enemy>();
-        anim = GetComponent<Animator>();
+        enemyParent = GetComponentInParent<Enemy>();
+        anim = GetComponentInParent<Animator>();
     }
 
     private void Update()

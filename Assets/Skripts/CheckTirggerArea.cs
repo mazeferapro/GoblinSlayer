@@ -8,15 +8,15 @@ public class CheckTirggerArea : MonoBehaviour
 
     private void Awake()
     {
-        enemyParent = GetComponent<Enemy>();
+        enemyParent = GetComponentInParent<Enemy>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (col.gameObject.CompareTag("Player"))
         {
             gameObject.SetActive(false);
-            enemyParent.target = collider.transform;
+            enemyParent.target = col.transform;
             enemyParent.inRange = true;
             enemyParent.hotZone.SetActive(true);
         }
