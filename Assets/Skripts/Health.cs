@@ -5,10 +5,22 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int hp;
+    private int HP;
+    public int maxHP;
+
+    public HealthBar healthBar;
+    void Start()
+    {
+        HP = maxHP;
+        healthBar.SetMaxHealth(maxHP);
+    }
     public void TakeDamage(int Damage)
     {
-        if (hp <= 0) { Destroy(gameObject); }
-        else { hp -= Damage; }
+        if (HP <= 0) { Destroy(gameObject); }
+        else
+        { 
+            HP -= Damage;
+            healthBar.SetHealth(HP);
+        }
     }
 }
