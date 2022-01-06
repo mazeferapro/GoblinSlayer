@@ -1408,6 +1408,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2373792242010320193, guid: b2a19cd24cb733d4585b59a96d140b12, type: 3}
+      propertyPath: leftlimit
+      value: 
+      objectReference: {fileID: 839485397}
+    - target: {fileID: 2373792242010320193, guid: b2a19cd24cb733d4585b59a96d140b12, type: 3}
+      propertyPath: rightLimit
+      value: 
+      objectReference: {fileID: 1344176665}
     - target: {fileID: 2373792242010320202, guid: b2a19cd24cb733d4585b59a96d140b12, type: 3}
       propertyPath: m_Name
       value: Goblin (1)
