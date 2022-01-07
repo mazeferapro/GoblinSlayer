@@ -16,11 +16,14 @@ public class Health : MonoBehaviour
     }
     public void TakeDamage(int Damage)
     {
+        HP -= Damage;
+        healthBar.SetHealth(HP);
         if (HP <= 0) { Destroy(gameObject); }
-        else
-        { 
-            HP -= Damage;
-            healthBar.SetHealth(HP);
-        }
+    }
+
+    public void Vampiric(int VampHP)
+    {
+        HP += VampHP;
+        if (HP > maxHP) { HP = maxHP; }
     }
 }
