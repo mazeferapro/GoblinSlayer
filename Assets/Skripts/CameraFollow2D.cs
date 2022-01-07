@@ -40,7 +40,7 @@ namespace N.Fridman.CameraFollow.Scripts
                     z = this.playerTransform.position.z - 10,
                 };
 
-                Vector3 pos = Vector3.Lerp(this.transform.position, target, this.movingSpeed * Time.deltaTime);
+                Vector3 pos = Vector3.Lerp(this.transform.position, target, this.movingSpeed);
 
                 this.transform.position = pos;
             }
