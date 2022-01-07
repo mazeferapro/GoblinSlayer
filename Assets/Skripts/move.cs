@@ -68,7 +68,14 @@ public class move : MonoBehaviour
 
     void Flip()
     {
-        sr.flipX = moveVector.x < 0;
+        if ( moveVector.x < 0){
+            sr.flipX = true;
+        }
+        else if (moveVector.x > 0)
+        {
+            sr.flipX = false;
+        }
+        
     }
 
     public bool onRoof;

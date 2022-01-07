@@ -2608,6 +2608,22 @@ PrefabInstance:
       propertyPath: VampiricChance
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040390, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040390, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: m_Size.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040390, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040390, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6651042960458040391, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
       propertyPath: JForce
       value: 75
