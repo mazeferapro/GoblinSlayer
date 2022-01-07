@@ -1269,7 +1269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
   playerTag: 
-  movingSpeed: 5
+  movingSpeed: 7.5
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2117,6 +2117,14 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1186079225}
+    - target: {fileID: 6651042960458040391, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: JForce
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040391, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: JValueIteration
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6651042960458040410, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
       propertyPath: m_RootOrder
       value: 1
