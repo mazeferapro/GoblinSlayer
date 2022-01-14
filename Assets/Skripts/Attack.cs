@@ -7,7 +7,7 @@ public class Attack : MonoBehaviour
     private float AttackSpeed;
     public float StartAttackSpeed;
     private int _Vampiric;
-    public int VampiricChance;
+    public int VampiricPercent;
 
     public Transform AttackPos;
     public LayerMask Enemy;
@@ -17,19 +17,14 @@ public class Attack : MonoBehaviour
 
     void Update()
     {
-        _Vampiric = VampiricChance * Damage / 100;
-        if (Input.GetMouseButton(0)) 
-        {
-            if (AttackSpeed <= 0)
-            {
-                anim.SetTrigger("Attack");
-            }
+        _Vampiric = VampiricPercent * Damage / 100;      
+        if (AttackSpeed <= 0 && Input.GetMouseButton(0))    
+        {    
+            anim.SetTrigger("Attack");
             AttackSpeed = StartAttackSpeed;
-        }
-        else
-        {
-            AttackSpeed -= Time.deltaTime;
-        }
+        }    
+        else { AttackSpeed -= Time.deltaTime; }
+        if (StartAttackSpeed <= 0.17f) { StartAttackSpeed = 0.17f; }
     }
 
     public void OnAttack()
@@ -39,8 +34,8 @@ public class Attack : MonoBehaviour
                 for (int i = 0; i < enemies.Length; i++)
                 {
                     enemies[i].GetComponent<EnemyDamage>().TakeDamage(Damage);
-                    GetComponent<Health>().Vampiric(_Vampiric);   
-        }
+                    GetComponent<Health>().Healing(_Vampiric);   
+                }
     }
 
     private void OnDrawGizmosSelected()

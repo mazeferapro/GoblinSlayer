@@ -1390,36 +1390,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
---- !u!1 &433040035
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 433040036}
-  m_Layer: 0
-  m_Name: e
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &433040036
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433040035}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.425, y: 1.303, z: -6.3645687}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &464581642
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,7 +2245,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 100
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2505,11 +2475,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373792242010320192, guid: b2a19cd24cb733d4585b59a96d140b12, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2373792242010320193, guid: b2a19cd24cb733d4585b59a96d140b12, type: 3}
       propertyPath: timer
-      value: 5
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2373792242010320193, guid: b2a19cd24cb733d4585b59a96d140b12, type: 3}
       propertyPath: leftlimit
@@ -2573,7 +2543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2373792242756713687, guid: b2a19cd24cb733d4585b59a96d140b12, type: 3}
       propertyPath: Damage
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2a19cd24cb733d4585b59a96d140b12, type: 3}
@@ -2593,9 +2563,21 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6651042960458040388, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: Usability
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040388, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1186079225}
+    - target: {fileID: 6651042960458040388, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: RegenPoint
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040388, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: StartCooldown
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6651042960458040389, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
       propertyPath: Damage
       value: 20
@@ -2607,6 +2589,14 @@ PrefabInstance:
     - target: {fileID: 6651042960458040389, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
       propertyPath: VampiricChance
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040389, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: VampiricPercent
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6651042960458040389, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
+      propertyPath: StartAttackSpeed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651042960458040390, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
       propertyPath: m_Size.x

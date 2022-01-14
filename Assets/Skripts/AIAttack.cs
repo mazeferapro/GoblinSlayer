@@ -5,7 +5,7 @@ using UnityEngine;
 public class AIAttack : MonoBehaviour
 {
     public LayerMask Player;
-    public int Damage;
+    public float Damage;
     void OnTriggerEnter2D(Collider2D trig)
     {
         if (trig.gameObject.tag == "Player")

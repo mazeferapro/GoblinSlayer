@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private int HP;
-    public int maxHP;
+    private float HP;
+    public float maxHP;
+    private float Cooldown;
+    private float RegenerationPerSeconds = 1f;
+    public float StartCooldown;
+    public float RegenPoint;
+    public int Usability;
+    public float PasiveRegeneration;
+
 
     public HealthBar healthBar;
     void Start()
@@ -14,16 +20,42 @@ public class Health : MonoBehaviour
         HP = maxHP;
         healthBar.SetMaxHealth(maxHP);
     }
-    public void TakeDamage(int Damage)
+
+    void Update()
+    {
+        if (Usability > 0)
+        {
+            if (Cooldown <= 0 && Input.GetKey(KeyCode.Z))
+            {
+                Healing(RegenPoint);
+                Usability--;
+                Cooldown = StartCooldown;
+            }
+            else { Cooldown -= Time.deltaTime; }
+        }
+        else { Cooldown = 0; }
+
+        if (RegenerationPerSeconds <= 0)
+        {
+            Healing(PasiveRegeneration);
+            RegenerationPerSeconds = 1f;
+        }
+        else { RegenerationPerSeconds -= Time.deltaTime; }
+        
+    }
+
+
+    public void TakeDamage(float Damage)
     {
         HP -= Damage;
         healthBar.SetHealth(HP);
         if (HP <= 0) { Destroy(gameObject); }
     }
 
-    public void Vampiric(int VampHP)
+    public void Healing(float _Healing)
     {
-        HP += VampHP;
+        HP += _Healing;
+        healthBar.SetHealth(HP);
         if (HP > maxHP) { HP = maxHP; }
     }
 }
