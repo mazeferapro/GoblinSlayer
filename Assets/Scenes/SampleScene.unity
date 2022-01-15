@@ -2462,6 +2462,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &348163973792562951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 348163974011512170, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_Name
+      value: HPPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.923
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.442
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -53.76046
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348163974011512183, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b3c7d994e92f264f98cd148ddca80fa, type: 3}
 --- !u!1001 &2373792241679247241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2564,7 +2621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6651042960458040388, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
       propertyPath: Usability
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6651042960458040388, guid: 80bdf1234e56dab45983d7a6d9da631c, type: 3}
       propertyPath: healthBar

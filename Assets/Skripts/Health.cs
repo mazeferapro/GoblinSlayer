@@ -21,6 +21,11 @@ public class Health : MonoBehaviour
         healthBar.SetMaxHealth(maxHP);
     }
 
+    public void USB(int _Usability)
+    {
+        Usability += _Usability;
+    }
+
     void Update()
     {
         if (Usability > 0)
