@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     public float StartCooldown;
     public float RegenPoint;
     public int Usability;
+    private float ArmorDamage;
+    public float Armor;
     public float PasiveRegeneration;
 
 
@@ -52,7 +54,9 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float Damage)
     {
-        HP -= Damage;
+        ArmorDamage = Damage - Armor;
+        if (ArmorDamage <= 0) { ArmorDamage = 0; }
+        HP -= ArmorDamage;
         healthBar.SetHealth(HP);
         if (HP <= 0) { Destroy(gameObject); }
     }
