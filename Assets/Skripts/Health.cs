@@ -66,5 +66,6 @@ public class Health : MonoBehaviour
         HP += _Healing;
         healthBar.SetHealth(HP);
         if (HP > maxHP) { HP = maxHP; }
+        if (HP <= 0) { Destroy(gameObject); }
     }
 }
