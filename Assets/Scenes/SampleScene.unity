@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 249932759}
   - component: {fileID: 249932758}
   - component: {fileID: 249932757}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1910,7 +1910,7 @@ GameObject:
   - component: {fileID: 496923829}
   - component: {fileID: 496923831}
   - component: {fileID: 496923830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2773,7 +2773,7 @@ GameObject:
   - component: {fileID: 2134777960}
   - component: {fileID: 2134777959}
   - component: {fileID: 2134777958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2859,7 +2859,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1389028979
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1001 &82514636787757772
@@ -3151,6 +3151,10 @@ PrefabInstance:
     - target: {fileID: 7054592959040703247, guid: 5cdd54d5d058b844eb16fdc0dcb32f8f, type: 3}
       propertyPath: m_Name
       value: MovingObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054592959040703247, guid: 5cdd54d5d058b844eb16fdc0dcb32f8f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7054592959040703280, guid: 5cdd54d5d058b844eb16fdc0dcb32f8f, type: 3}
       propertyPath: m_Pivot.x
