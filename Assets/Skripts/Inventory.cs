@@ -32,10 +32,10 @@ public class Inventory : MonoBehaviour
         {
             AddGraphics();
         }
-        for (int i = 0; i < maxCount; i++) // тест по шмоту
-        {
-            AddItem(i, data.items[Random.Range(0, data.items.Count)], Random.Range(1, 16));
-        }
+        //for (int i = 0; i < maxCount; i++) // тест по шмоту
+        //{
+        //    AddItem(i, data.items[Random.Range(0, data.items.Count)], Random.Range(1, 16));
+        //}
     }
 
     public void Update()
